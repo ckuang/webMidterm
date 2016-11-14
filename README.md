@@ -13,7 +13,6 @@ b. boolean <br/>
 c. undefined <br/>
 d. string <br/>
 e. number <br/>
-
 #### 2. Truthy and Falsy 1
 What would the following lines of code output to the console?
 ```js
@@ -22,7 +21,6 @@ b. console.log(1 || 2);
 c. console.log(0 && 1);
 d. console.log(1 && 2);
 ```
-
 #### 3. Truthy and Falsy 2
 ```js
 function checkcheck(value) {
@@ -47,7 +45,6 @@ f. checkcheck(0)
 g. checkcheck("")
 h. checkcheck("foo")
 ```
-
 #### 4. Push & Slice
 What will the following code log to the console?
 ```js
