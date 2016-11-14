@@ -243,8 +243,6 @@ containsInString('pineapple', 'a');
 ```
 ### 18. Count the vowels
 Write a function called countVowels that takes in a string. It should return an object containing the number of times each vowels appears in the string.
-
-Examples:
 ```js
 countVowels('testing'); //{a: 0, e: 1, i: 1, o: 0, u: 0}
 countVowels('poetic justice, put it in a song'); //{a: 1, e: 2, i: 4, o: 2, u: 2}
