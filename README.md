@@ -8,13 +8,12 @@ var test3 = 0 || {huh: 'what am i ?'};
 var test4;
 var test5 = parseInt('22');
 ```
-Match the correct letter/type to each variable above.
+Match the correct letter/type to each variable above. <br/>
 a. object <br/>
 b. boolean <br/>
 c. undefined <br/>
 d. string <br/>
 e. number <br/>
-
 
 ## 2. Truthy and Falsy 1
 What would the following lines of code output to the console?
@@ -37,6 +36,7 @@ function checkcheck(value) {
 ```
 **For example:**
 `checkcheck(NaN)` // returns: false
+
 **For each of the below problems, write whether they would return `true` or `false`:**
 a. `checkcheck(false)`
 b. `checkcheck(true)`
