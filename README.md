@@ -38,15 +38,16 @@ function checkcheck(value) {
 `checkcheck(NaN)` // returns: false
 
 **For each of the below problems, write whether they would return `true` or `false`:**
-a. `checkcheck(false)`
-b. `checkcheck(true)`
-c. `checkcheck(null)`
-d. `checkcheck(42)`
-e. `checkcheck(undefined)`
-f. `checkcheck(0)`
-g. `checkcheck("")`
-h. `checkcheck("foo")`
-
+```js
+a. checkcheck(false)
+b. checkcheck(true)
+c. checkcheck(null)
+d. checkcheck(42)
+e. checkcheck(undefined)
+f. checkcheck(0)
+g. checkcheck("")
+h. checkcheck("foo")
+```
 
 ## 4. Push & Slice
 What will the following code log to the console?
@@ -59,7 +60,6 @@ arr.push('Ghostface');
 arr.slice(0);
 console.log(arr);
 ```
-
 ## 5. Array log
 What will the following code log to the console?
 ```js
@@ -71,7 +71,6 @@ function mystery(arr) {
 
 mystery(arr);
 ```
-
 ## 6. Array sum
 What will the following code log to the console?
 ```js
@@ -88,7 +87,6 @@ function mystery(arr) {
 
 console.log(mystery(arr));
 ```
-
 ## 7. Array loop
 What will the following code log to the console?
 ```js
@@ -102,7 +100,6 @@ function mystery(arr) {
 
 mystery(arr);
 ```
-
 ## 8. Filter
 What will the following code log to the console?
 ```js
@@ -116,7 +113,6 @@ function mystery(arr) {
 
 console.log(mystery(arr));
 ```
-
 ## 9. Map
 What will the following code log to the console?
 ```js
@@ -130,7 +126,6 @@ function mystery(arr) {
 
 console.log(mystery(arr));
 ```
-
 ## 10. Array logical operators
 What will the following code log to the console?
 ```js
@@ -146,7 +141,6 @@ function mystery(arr) {
 
 mystery(arr);
 ```
-
 ## 11. Scope
 What will the following code log to the console?
 ```js
@@ -165,7 +159,6 @@ mystery2();
 mystery1();
 mystery1();
 ```
-
 ## 12. Scope & Closure
 What will the following code log to the console?
 ```js
@@ -180,7 +173,6 @@ function mystery1() {
 var mystery2 = mystery1();
 mystery2(10);
 ```
-
 ## 13. DOM
 `index.html` file:
 ```html
@@ -204,7 +196,6 @@ a. console.log(document.getElementById('text1').innerHTML);
 b. console.log(document.getElementsByTagName('p')[2].innerHTML);
 c. console.log(document.getElementsByClassName('text1')[2].innerHTML);
 ```
-
 ## 14. Constructor Functions
 Given the following test cases, write a constructor function called  `Drink` that will allow you to make new `Drink` objects with a `name` and `carbonated` property. The `Drink` function should also include a `shake` prototype method that produces the following results:
 ```js
@@ -218,14 +209,12 @@ sprite.name // returns 'Orange Juice'
 sprite.carbonated // returns false
 oj.shake() // returns "nothing happens..."
 ```
-
 ## 15. Odd nums
 Write a function `oddNums` that receives an array of strings and numbers and returns an array of only the odd numbers.
 ```js
 oddNums([1, 'hey', 2, 3, 4, 'hi', 5, 6, 'hello', 7]) // returns [1, 3, 5, 7]
 oddNums([3, 18, 'what up', 23, 48, 'cya', 99]) // returns [3, 23, 99]
 ```
-
 ## 16. Loops and Conditionals
 Write a function `vowToNum` to replace every letter `e` or `E` with a `3` and every `i` or `I` with a `1` and `o` or `O` with `0`. You can use a if...else or switch...case.
 ```js
@@ -233,7 +222,6 @@ vowToNum("Apple") // returns "Appl3"
 vowToNum("Cheese Doodle") // returns "Ch33s3 D00dl3"
 vowToNum("hello kitty") // returns "h3110 k1tty"
 ```
-
 ## 17. Function Return
 Identify why the following function doesn't work, and then rewrite the correct solution.
 
@@ -253,7 +241,6 @@ function containsInString(string, letter) {
 
 containsInString('pineapple', 'a');
 ```
-
 ## 18. Count the vowels
 Write a function called countVowels that takes in a string. It should return an object containing the number of times each vowels appears in the string.
 
@@ -262,7 +249,6 @@ Examples:
 countVowels('testing'); //{a: 0, e: 1, i: 1, o: 0, u: 0}
 countVowels('poetic justice, put it in a song'); //{a: 1, e: 2, i: 4, o: 2, u: 2}
 ```
-
 ## 19. Recursion
 Write a recursive function `stringCombine()` that receives two strings and returns one reconstructed string with alternating letters from the two strings.
 ```js
