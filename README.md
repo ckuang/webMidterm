@@ -1,11 +1,11 @@
 ### Web Development Midterm
 #### 1. Variables & Type
 ```js
-var test1 = (6 > 5);
-var test2 = 10 * 2 > 19 ? 'this is a test' : null;
-var test3 = 0 || {huh: 'what am i ?'};
-var test4;
-var test5 = parseInt('22');
+var test1 = (20 > 5);
+var test2 = 0 || {fruit: "apple"};
+var test3 = 10 * 2 > 19 ? 'this is a test' : null;
+var test4 = parseInt('22');
+var test5;
 ```
 Match the correct letter/type to each variable above. <br/>
 a. object <br/>
@@ -13,13 +13,14 @@ b. boolean <br/>
 c. undefined <br/>
 d. string <br/>
 e. number <br/>
+
 #### 2. Truthy and Falsy 1
 What would the following lines of code output to the console?
 ```js
-a. console.log(0 || 1);
-b. console.log(1 || 2);
-c. console.log(0 && 1);
-d. console.log(1 && 2);
+a. console.log(null || "hello");
+b. console.log("hello" || "world");
+c. console.log(null && "hello");
+d. console.log("hello" && "world");
 ```
 #### 3. Truthy and Falsy 2
 ```js
@@ -83,20 +84,8 @@ function mystery(arr) {
 
 console.log(mystery(arr));
 ```
-#### 7. Array loop
-What will the following code log to the console?
-```js
-var arr = [10, 1, 15, 2, 20, 3];
 
-function mystery(arr) {
-  for(var i = 0; i < arr.length; i++) {
-    console.log(Math.max(5, i));
-  }
-}
-
-mystery(arr);
-```
-#### 8. Filter
+#### 7. Filter
 What will the following code log to the console?
 ```js
 var arr = [10, 1, 15, 2, 20, 3];
@@ -109,7 +98,7 @@ function mystery(arr) {
 
 console.log(mystery(arr));
 ```
-#### 9. Map
+#### 8. Map
 What will the following code log to the console?
 ```js
 var arr = [1, 2, 3, 4, 5];
@@ -122,22 +111,8 @@ function mystery(arr) {
 
 console.log(mystery(arr));
 ```
-#### 10. Array logical operators
-What will the following code log to the console?
-```js
-var arr = [10, 2, 3, 4, 5];
 
-function mystery(arr) {
-  for(var i = 0; i < arr.length; i++) {
-    if(arr[i] >= 10 || arr[i] % 2 === 0 && arr[i] <= 5) {
-      console.log(arr[i]);
-    }
-  }
-}
-
-mystery(arr);
-```
-#### 11. Scope
+#### 9. Scope
 What will the following code log to the console?
 ```js
 var counter = 10;
@@ -155,7 +130,7 @@ mystery2();
 mystery1();
 mystery1();
 ```
-#### 12. Scope & Closure
+#### 10. Scope & Closure
 What will the following code log to the console?
 ```js
 var counter = 20;
@@ -169,7 +144,7 @@ function mystery1() {
 var mystery2 = mystery1();
 mystery2(10);
 ```
-#### 13. DOM
+#### 11. DOM
 `index.html` file:
 ```html
 <html>
@@ -192,7 +167,7 @@ a. console.log(document.getElementById('text1').innerHTML);
 b. console.log(document.getElementsByTagName('p')[2].innerHTML);
 c. console.log(document.getElementsByClassName('text1')[2].innerHTML);
 ```
-#### 14. Constructor Functions
+#### 12. Constructor Functions
 Given the following test cases, write a constructor function called  `Drink` that will allow you to make new `Drink` objects with a `name` and `carbonated` property. The `Drink` function should also include a `shake` prototype method that produces the following results:
 ```js
 let sprite = new Drink('Sprite', true)
@@ -205,20 +180,20 @@ sprite.name // returns 'Orange Juice'
 sprite.carbonated // returns false
 oj.shake() // returns "nothing happens..."
 ```
-#### 15. Odd nums
+#### 13. Odd nums
 Write a function `oddNums` that receives an array of strings and numbers and returns an array of only the odd numbers.
 ```js
 oddNums([1, 'hey', 2, 3, 4, 'hi', 5, 6, 'hello', 7]) // returns [1, 3, 5, 7]
 oddNums([3, 18, 'what up', 23, 48, 'cya', 99]) // returns [3, 23, 99]
 ```
-#### 16. Loops and Conditionals
+#### 14. Loops and Conditionals
 Write a function `vowToNum` to replace every letter `e` or `E` with a `3` and every `i` or `I` with a `1` and `o` or `O` with `0`. You can use a if...else or switch...case.
 ```js
 vowToNum("Apple") // returns "Appl3"
 vowToNum("Cheese Doodle") // returns "Ch33s3 D00dl3"
 vowToNum("hello kitty") // returns "h3110 k1tty"
 ```
-#### 17. Function Return
+#### 15. Function Return
 Identify why the following function doesn't work, and then rewrite the correct solution.
 
 The goal of the function is to take in a string and a letter, return `true` if the letter is in the string, and return `false` if the letter is not in the string.
@@ -237,13 +212,12 @@ function containsInString(string, letter) {
 
 containsInString('pineapple', 'a');
 ```
-#### 18. Count the vowels
-Write a function called countVowels that takes in a string. It should return an object containing the number of times each vowels appears in the string.
+#### 16. Count the letters
+Write a function called countLetters that takes in a string. It should return an object containing the number of times each letter appears in the string.
 ```js
-countVowels('testing'); //{a: 0, e: 1, i: 1, o: 0, u: 0}
-countVowels('poetic justice, put it in a song'); //{a: 1, e: 2, i: 4, o: 2, u: 2}
+countLetters('testing'); //{t: 2, e: 1, s: 1, i: 1, n: 1, g: 1}
 ```
-#### 19. Recursion
+#### 17. Recursion
 Write a recursive function `stringCombine()` that receives two strings and returns one reconstructed string with alternating letters from the two strings.
 ```js
 stringCombine('abc', 'def') // returns 'adbecf'
